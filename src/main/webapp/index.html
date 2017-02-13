@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+</head>
+<body>
+
+<h2>Customers</h2>
+
+
+<h3>POST /api/v1/customers - create customer</h3>
+<ul>
+    <li>FormParam firstName - set firstName to param</li>
+    <li>FormParam lastName - set lastName to param</li>
+    <li>FormParam birth - set birth to param [yyyy-MM-dd]</li>
+</ul>
+
+<h3>PUT /api/v1/customers/{id} - update customer with id</h3>
+<ul>
+    <li>FormParam firstName - set firstName to param</li>
+    <li>FormParam lastName - set lastName to param</li>
+    <li>FormParam birth - set birth to param [yyyy-MM-dd]</li>
+</ul>
+
+<h3>GET /api/v1/customers/{id} - get customer with id</h3>
+
+<h3>GET /api/v1/customers - list customers by parameters</h3>
+<ul>
+    <li>QueryParam firstName - customers whose firstName starts with param</li>
+    <li>QueryParam lastName - customers whose lastName starts with param</li>
+    <li>QueryParam birthFrom - customers who were born after param (incl.) [yyyy-MM-dd]</li>
+    <li>QueryParam birthTo - customers who were born before param (incl.) [yyyy-MM-dd]</li>
+</ul>
+
+<h3>DELETE /api/v1/customers/{id} - delete customer with id</h3>
+
+<h3>DELETE /api/v1/customers - delete customers by parameters</h3>
+<ul>
+    <li>QueryParam firstName - customers whose firstName starts with param</li>
+    <li>QueryParam lastName - customers whose lastName starts with param</li>
+    <li>QueryParam birthFrom - customers who were born after param (incl.) [yyyy-MM-dd]</li>
+    <li>QueryParam birthTo - customers who were born before param (incl.) [yyyy-MM-dd]</li>
+</ul>
+
+</body>
+</html>
